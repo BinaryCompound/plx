@@ -15,7 +15,7 @@
         text-align: left;
         display: inline-block;
         font-size: 20px;
-        border: 4px solid rgb(121, 75, 121);
+        border: 4px solid rgb(33, 182, 13);
         margin: 10px;
         padding: 20px;
     }
@@ -60,7 +60,9 @@
     }
     .container{
         display: flex;
-        justify-content: space-around;      
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column; 
     }
     .cont{
         display: flex;
@@ -68,9 +70,28 @@
     }
     .cont2{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-end;
         flex-direction: column;
+    }
+    .table{
+        background-color: rgb(39, 2, 73);
+        border: 1px solid rgb(30, 255, 0);
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid rgb(30, 255, 0);
+    }
+    .border{
+        border: 2px solid rgb(30, 255, 0);
+    }
+    .img{
+        border-radius: 100px;
+        border: 2px solid blueviolet;
+        box-shadow: 0 0 7px rgb(30, 255, 0);
+    }
+    .img2{
+        border-radius: 10px;
     }
 </style>
 <body class="back">
@@ -85,26 +106,76 @@
     </div>
     <main class="split">
         <section>
-            <h1 class="text2">О нашей студии маникюра</h1>
-            <p class="text3">Наша студия была основана более года назад, за это время мы провели <span style="color: rgb(30, 255, 0);">более 1000 процедур</span>.
+            <h1 class="text2">О нашей студии маникюра:</h1>
+            <p class="text3 border">Наша студия была основана более года назад, за это время мы провели <span style="color: rgb(30, 255, 0);">более 1000 процедур</span>.
              У нас по городу Санкт-Петербург есть 3 рабочие студии и мы будем рады вас видеть там!</p>
              <h1 class="text2">Какие работы мы проводим?</h1>
-             <ul class="text3">
+             <ul class="text3 border">
                 <li>Снятие маникюра</li>
                 <li>Маникюр</li>
                 <li>Покрытие гель-лаком</li>
                 <li>Наращивание</li>
              </ul>
              <h1 class="text2">
-                Прайс лист
+                Прайс лист:
              </h1>
+             <table class="text3 table">
+                <tr>
+                    <td>Маникюр</td>
+                    <td>500р</td>
+                </tr>
+                <tr>
+                    <td>Маникюр с покрытием</td>
+                    <td>1500р</td>
+                </tr>
+                <tr>
+                    <td>Наращивание (1 ноготь)</td>
+                    <td>100р</td>
+                </tr>
+                <tr>
+                    <td>Снятие маникюра (чужого покрытия)</td>
+                    <td>200р</td>
+                </tr>
+                <tr>
+                    <td>Дизайны</td>
+                    <td>50р-100р</td>
+                </tr>
+             </table>
         </section>
-        <div class="cont2">
-        <img src="nail.jpg" alt="naa" width="400" height="280">
-        <img src="nail2.jpg" alt="naa" width="400" height="280">
-        <img src="nail5.jpg" alt="naa" width="400" height="280">
+        <div class="cont2 ">
+        <img src="nail.jpg" alt="naa" width="400" height="280" class="img">
+        <img src="nail2.jpg" alt="naa" width="400" height="280" class="img">
+        <img src="nail5.jpg" alt="naa" width="400" height="280" class="img">
         </div>
-        <section></section>
+        <section>
+            <h1 class="text2">Наши студии</h1>
+             <p class="text3">
+                Это самая первая студия, в ней работает 2 специалиста Анастасия и Валерия,
+                со стажем 3 года. Она находится по адресу: <span style="color: rgb(30,255,0);">Софийская улица, 33к1</span>.
+             </p>
+        </section>
+        <section>
+            <div class="container ">
+            <img src="manic.jpg" alt="naa" width="600" height="450" class="img2">
+            </div>
+        </section>
+        <section>
+            <p class="text3">Это вторая наша студия, в которой работает 1 специалист Екатерина.
+                Она находится по адресу: <span style="color: rgb(30, 255, 0);">Измайловский проспект, 9/2</span>.
+            </p>
+        </section>
+        <section>
+            <img src="manic2.jpg" alt="naa" width="600" height="450" class="img2">
+        </section>
+        <section>
+            <p class="text3">
+                И наша треья студия, которая не менее хуже чем 2 предыдущие, в которой работает 1 специалист Ксения.
+                Она находится по адресу: <span style="color: rgb(30,255,0);">улица Черняховского, 43</span>
+            </p>
+        </section>
+        <section>
+            <img src="manic3.jpg" alt="naa" width="600" height="450" class="img2">
+        </section>
     </main>
 </body>
 </html>
