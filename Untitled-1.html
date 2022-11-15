@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navigation{
+        background-color: blueviolet;
+        border: none;
+        padding: 15px 32px;
+        color: white;
+        text-align: left;
+        display: inline-block;
+        font-size: 20px;
+        border: 4px solid rgb(121, 75, 121);
+        margin: 10px;
+        padding: 20px;
+    }
+    .back{
+        background-color: black;
+    }
+    .back2{
+        background-color: rgb(39, 2, 73);
+    }
+    .text{
+        color: blueviolet;
+        font-size: 100px;
+        font-family: fantasy;
+        text-align: center;
+        margin: auto;
+    }
+    .text2{
+        color: blueviolet;
+        text-align: left;
+        padding: 5px;
+        font-size: 65px;
+        font-family: fantasy;
+    }
+    .text3{
+        color: blueviolet;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        background-color: rgb(10, 0, 19);
+    }
+    .text4{
+        color: blueviolet;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        display: block;
+    }
+    .split{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 4rem;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;      
+    }
+    .cont{
+        display: flex;
+        justify-content: left;
+    }
+    .cont2{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+</style>
+<body class="back">
+    <nav class="back2 cont">
+    <a href="#" class="navigation">Вконтакте</a>
+    <a href="#" class="navigation">Инстаграм</a>
+    <a href="#" class="navigation">Регистрация</a>
+    </nav>
+    <h1 class="text">PLAXA.NAIL</h1>
+    <div class="cont2">
+
+    </div>
+    <main class="split">
+        <section>
+            <h1 class="text2">О нашей студии маникюра</h1>
+            <p class="text3">Наша студия была основана более года назад, за это время мы провели <span style="color: rgb(30, 255, 0);">более 1000 процедур</span>.
+             У нас по городу Санкт-Петербург есть 3 рабочие студии и мы будем рады вас видеть там!</p>
+             <h1 class="text2">Какие работы мы проводим?</h1>
+             <ul class="text3">
+                <li>Снятие маникюра</li>
+                <li>Маникюр</li>
+                <li>Покрытие гель-лаком</li>
+                <li>Наращивание</li>
+             </ul>
+             <h1 class="text2">
+                Прайс лист
+             </h1>
+        </section>
+        <div class="cont2">
+        <img src="nail.jpg" alt="naa" width="400" height="280">
+        <img src="nail2.jpg" alt="naa" width="400" height="280">
+        <img src="nail5.jpg" alt="naa" width="400" height="280">
+        </div>
+        <section></section>
+    </main>
+</body>
+</html>
