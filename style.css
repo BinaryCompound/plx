@@ -1,0 +1,135 @@
+.base-button {
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-family: fantasy;
+    background-color: rgb(176, 128, 207);
+  }
+  .button {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: black;
+    color: greenyellow;
+  }
+
+  .button-pseudo {
+    --time: 0.3s;
+
+    position: relative;
+
+    transition: color var(--time) ease-in-out;
+
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .button-pseudo:hover {
+    color: rgba(188, 33, 194, 0.767);
+  }
+
+  .button-pseudo::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.658);
+
+    content: "";
+
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+    transition: transform var(--time) ease-in-out;
+    z-index: -1;
+  }
+
+  .button-pseudo:hover::before {
+    transform: scaleY(1);
+  }
+
+  .logo{
+      display: flex;
+      justify-content: center;
+  }
+  .back{
+      background-color: black;
+  }
+  .back2{
+      background-color: rgb(39, 2, 73);
+  }
+  .text{
+      color: blueviolet;
+      font-size: 100px;
+      font-family: fantasy;
+      text-align: center;
+      margin: auto;
+  }
+  .text2{
+      color: blueviolet;
+      text-align: left;
+      padding: 5px;
+      font-size: 65px;
+      font-family: fantasy;
+  }
+  .text3{
+      color: blueviolet;
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: left;
+      background-color: rgb(10, 0, 19);
+  }
+  .text4{
+      color: blueviolet;
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: left;
+      display: block;
+  }
+  .split{
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      gap: 4rem;
+  }
+  .container{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column; 
+  }
+  .cont{
+      display: flex;
+      justify-content: left;
+      margin: 3px;
+  }
+  .cont2{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: column;
+  }
+  .table{
+      background-color: rgb(39, 2, 73);
+      border: 1px solid rgb(30, 255, 0);
+      border-collapse: collapse;
+  }
+  th, td {
+      border: 1px solid rgb(30, 255, 0);
+  }
+  .border{
+      border: 2px solid rgb(30, 255, 0);
+  }
+  .img{
+      border-radius: 100px;
+      border: 2px solid blueviolet;
+      box-shadow: 0 0 7px rgb(30, 255, 0);
+  }
+  .img2{
+      border-radius: 10px;
+  }
